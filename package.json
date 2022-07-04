@@ -1,0 +1,21 @@
+{
+    "name": "sucrase-exports-repro",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Joe Bateson <joe@joebateson.com>",
+    "license": "MIT",
+    "volta": {
+        "node": "16.15.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.18.6",
+        "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+        "@sucrase/jest-plugin": "^2.2.1",
+        "babel-jest": "^28.1.2",
+        "jest": "^28.1.2",
+        "sucrase": "^3.23.0"
+    },
+    "scripts": {
+        "test": "TRANSFORM_PLUGIN=babel-jest jest; TRANSFORM_PLUGIN=@sucrase/jest-plugin jest"
+    }
+}
