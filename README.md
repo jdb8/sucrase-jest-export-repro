@@ -1,6 +1,6 @@
 # sucrase-jest-export-repro
 
-Attempting to reproduce an inconsistency between Babel and Sucrase when dealing with transitive mocked exports.
+Attempting to reproduce [an inconsistency between Babel and Sucrase](https://github.com/alangpierce/sucrase/issues/715) when dealing with transitive mocked exports.
 
 This may or may not be an actual bug, but I wanted to find a minimal repro for the weird behaviour I was seeing.
 
